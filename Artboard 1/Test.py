@@ -28,12 +28,12 @@ while True:
 		if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
 			pos = pygame.mouse.get_pos()
 			if start_button_rect.collidepoint(pos):
-				print("START")
+				print("Continues to Artboard 2")
 			if quit_button_rect.collidepoint(pos):
 				pygame.quit()
 				sys.exit()
 			if settings_rect.collidepoint(pos):
-				print("LANGUAGE")
+				print("Change Language")
 	
 		
 	screen.blit(start_button,start_button_rect)
